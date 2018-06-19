@@ -13,7 +13,6 @@ import traceback
 from time import sleep
 import signal
 import random
-import pywapi
 import threading
 
 global PATH_VRX
