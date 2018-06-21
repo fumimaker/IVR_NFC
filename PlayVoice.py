@@ -46,5 +46,5 @@ def playError_DataError():
 
 def playPathById(_path):
     path = VOICE_PATH1 + _path + VOICE_PATH2
-    print(path)
+    print(_path)
     playSound(path)

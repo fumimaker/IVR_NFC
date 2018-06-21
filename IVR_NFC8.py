@@ -17,7 +17,7 @@ CSV_PATH1 = "./csv/"
 CSV_PATH2 = ".csv"
 CSV_NAMELIST_PATH = "./csv/nameList.csv"
 VOICE_PATH1 = "./voice/"
-VOICE_PATH2 = ".mp3"
+VOICE_PATH2 = ".wav"
 
 
 def clockIn():
@@ -27,10 +27,14 @@ def clockIn():
     writeList.append(now.strftime("%X"))
     writeList.append(now.strftime("%s"))
     print("書き込み予定データ" + str(writeList))
-    with open(CSV_PATH1 + nowDataList[2] + CSV_PATH2, 'a') as f:
-        writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
-        writer.writerow(writeList)  # list（1次元配列）の場合
-    print("書き込み正常終了")
+    try:
+        with open(CSV_PATH1 + nowDataList[2] + CSV_PATH2, 'a') as f:
+            writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
+            writer.writerow(writeList)  # list（1次元配列）の場合
+            print("成功")
+    except:
+
+        print("失敗")
     PlayVoice.playPathById(nowDataList[2])
     PlayVoice.playMorning()
 
@@ -60,12 +64,13 @@ def operateCsv():
     print("書き込みパス: " + str(path))
     workingList = []
     factor_num = 0
-    with open(path, 'r') as f:
-        reader = csv.reader(f)
-        # header = reader.next()
-        for line in reader:
-            workingList.append(line)
     try:
+        with open(path, 'r') as f:
+            reader = csv.reader(f)
+            # header = reader.next()
+            for line in reader:
+                workingList.append(line)
+
         factor_num = len(workingList[len(workingList) - 1])
     except:
         print("何もなし")
