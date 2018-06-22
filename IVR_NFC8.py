@@ -32,11 +32,11 @@ def clockIn():
             writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
             writer.writerow(writeList)  # list（1次元配列）の場合
             print("成功")
+        PlayVoice.playPathById(nowDataList[2])
+        PlayVoice.playMorning()
     except:
-
-        print("失敗")
-    PlayVoice.playPathById(nowDataList[2])
-    PlayVoice.playMorning()
+        PlayVoice.playError_DataError()
+        print("書き込み失敗")
 
 
 def clockOut(list):
@@ -47,14 +47,18 @@ def clockOut(list):
     tmp[2] = now.strftime("%X")
     tmp.append(str((delta - before) / 60.0))
     print("書き込み予定データ" + str(tmp))
-    with open(CSV_PATH1 + nowDataList[2] + CSV_PATH2, 'w') as f:
-        writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
-        for i in range(len(list)):
-            writer.writerow(list[i-1])
-    print("書き込み正常終了")
-    print(nowDataList[2])
-    PlayVoice.playPathById(nowDataList[2])
-    PlayVoice.playEvening()
+    try:
+        with open(CSV_PATH1 + nowDataList[2] + CSV_PATH2, 'w') as f:
+            writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
+            for i in range(len(list)):
+                writer.writerow(list[i-1])
+        print("書き込み正常終了")
+        print(nowDataList[2])
+        PlayVoice.playPathById(nowDataList[2])
+        PlayVoice.playEvening()
+    except:
+        print("書き込み失敗")
+        PlayVoice.playError_DataError()
 
 
 def operateCsv():
