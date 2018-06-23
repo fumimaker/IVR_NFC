@@ -6,13 +6,12 @@ import os
 import random
 
 PATH1 = "./voice_time/"
-PATH2 = ".wav"
 
 morningTime = datetime.time(9, 0)
 lunchTime = datetime.time(13, 10)
 breakTime = datetime.time(16, 0)
 eveningTime = datetime.time(19, 0)
-testTime = datetime.time(1, 8)
+testTime = datetime.time(1, 15)
 
 morningPath = "morning/"
 lunchPath = "lunch/"
