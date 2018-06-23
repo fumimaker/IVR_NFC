@@ -6,10 +6,10 @@ IVR_NFC - Pasori380使ってセキュリティカードをタッチすること�
 IVR_timeReport - きずなあかりちゃんが時報をやってくれます。 
 
 ## Description
-###IVR_NFC
+### IVR_NFC
 idm使って個人識別してます。NFCサービスも好き別して弾くなどしてないので大規模な会社ではこれやらないほうがいいでしょう。
 CSVに個人情報を登録するとそこから自動で情報を読み取って追加してくれます。
-###IVR_timeReport
+### IVR_timeReport
 決められたディレクトリにファイルを入れておけばランダムにどれかえらんで読んでくれるよ。
 ## Requirement
 nfcpy(python2.7.10)
