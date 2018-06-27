@@ -11,7 +11,7 @@ morningTime = datetime.time(9, 0)
 lunchTime = datetime.time(13, 10)
 breakTime = datetime.time(16, 0)
 eveningTime = datetime.time(19, 0)
-testTime = datetime.time(1, 15)
+testTime = datetime.time(0, 0)
 
 morningPath = "morning/"
 lunchPath = "lunch/"
