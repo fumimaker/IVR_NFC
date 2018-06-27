@@ -1,0 +1,46 @@
+{
+    "大鶴 尚之": {
+        "idm": "C3D78B5A",
+        "path": "./voice/otsuru.mp3"
+    },
+    "鈴木 謙太": {
+        "idm": "01010312D718B809",
+        "path": "./voice/suzuki.mp3"
+    },
+    "斉藤 弘恭": {
+        "idm": "E3E88B5A",
+        "path": "./voice/saitou.mp3"
+    },
+    "平井 雄一": {
+        "idm": "93D78B5A",
+        "path": "./voice/yuukun.mp3"
+    },
+    "田中 修一": {
+        "idm": "33C78B5A",
+        "path": "./voice/tanaka.mp3"
+    },
+    "前田 じゅんき": {
+        "idm": "B3E8F65B",
+        "path": "./voice/maeda.mp3"
+    },
+    "小林 隆貴": {
+        "idm": "53C78B5A",
+        "path": "./voice/kobayashi_r.mp3"
+    },
+    "堤 修平": {
+        "idm": "33D5F65B",
+        "path": "./voice/tsutsumi.mp3"
+    },
+    "赤木 豪": {
+        "idm": "A3D78B5A",
+        "path": "./voice/gou.mp3"
+    },
+    "浅川 雄基": {
+        "idm": "13E9F65B",
+        "path": "./voice/asakawa.mp3"
+    },
+    "水野 史暁": {
+        "idm": "C36F395C",
+        "path": "./voice/mizuno.mp3"
+    }
+}
