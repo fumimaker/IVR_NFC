@@ -11,7 +11,7 @@ PATH1 = "./voice_time/"
 morningTime = datetime.time(9, 0)
 lunchTime = datetime.time(13, 10)
 breakTime = datetime.time(16, 0)
-eveningTime = datetime.time(19, 0)
+eveningTime = datetime.time(17, 10)
 testTime = datetime.time(0, 0)
 
 morningPath = "morning/"
@@ -25,6 +25,7 @@ time_list = {morningTime: morningPath, lunchTime: lunchPath,
 
 
 def playSound(path):
+    '''
     CHUNK = 1024
     filename = path
     wf = wave.open(filename, 'rb')
@@ -40,6 +41,9 @@ def playSound(path):
     stream.stop_stream()
     stream.close()
     p.terminate()
+    '''
+    cmd = "aplay " + path
+    os.system(cmd)
 
 
 def selectRandom(name):
