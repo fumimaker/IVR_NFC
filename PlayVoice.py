@@ -1,12 +1,14 @@
 import time
 import pyaudio
 import wave
+import os
 
 VOICE_PATH1 = "./voice/"
 VOICE_PATH2 = ".wav"
 
 
 def playSound(path):
+    '''
     CHUNK = 1024
     filename = path
     wf = wave.open(filename, 'rb')
@@ -22,6 +24,9 @@ def playSound(path):
     stream.stop_stream()
     stream.close()
     p.terminate()
+    '''
+    cmd = "aplay " + path
+    os.system(cmd)
 
 
 def playMorning():
