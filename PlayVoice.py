@@ -1,5 +1,5 @@
 import time
-import pyaudio
+#import pyaudio
 import wave
 import os
 

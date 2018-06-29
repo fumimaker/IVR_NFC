@@ -8,6 +8,10 @@ import json
 import codecs
 import PlayVoice
 import datetime
+import os
+
+sys.path.insert(1, os.path.split(sys.path[0])[0])
+
 userData = {}
 nowDataList = []
 
