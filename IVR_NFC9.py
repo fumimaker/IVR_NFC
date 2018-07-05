@@ -65,12 +65,12 @@ def clockIn():
         postSlack(mozi)
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playMorning()
-    except:
-        PlayVoice.playError_DataError()
-        print("[error] " + "書き込み失敗")
-        mozi = "ごめんなさい、書き込みに失敗しました。"
-        postSlack(mozi)
 
+   # except:
+   #     PlayVoice.playError_DataError()
+  #      print("[error] " + "書き込み失敗")
+ #       mozi = "ごめんなさい、書き込みに失敗しました。"
+#        postSlack(mozi)
 
 def clockOut(list):
     now = datetime.datetime.now()
@@ -91,11 +91,12 @@ def clockOut(list):
         print(nowDataList[2])
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playEvening()
-    except:
-        print("[error] " + "書き込み失敗")
-        PlayVoice.playError_DataError()
-        mozi = "ごめんなさい、書き込みに失敗しました。"
-        postSlack(mozi)
+
+#    except:
+ #       print("[error] " + "書き込み失敗")
+  #      PlayVoice.playError_DataError()
+   #     mozi = "ごめんなさい、書き込みに失敗しました。"
+    #    postSlack(mozi)
 
 
 def operateCsv():
