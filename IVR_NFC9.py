@@ -61,16 +61,17 @@ def clockIn():
             writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
             writer.writerow(writeList)  # list（1次元配列)
             print("[log] " + "成功")
-        mozi = nowDataList[0]+"さん、おはようございます。正常に出勤処理を行いました。"
+        mozi = str(nowDataList[0])+"さん、おはようございます。正常に出勤処理を行いました。"
         postSlack(mozi)
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playMorning()
 
-   # except:
-   #     PlayVoice.playError_DataError()
-  #      print("[error] " + "書き込み失敗")
- #       mozi = "ごめんなさい、書き込みに失敗しました。"
-#        postSlack(mozi)
+    except:
+        PlayVoice.playError_DataError()
+        print("[error] " + "書き込み失敗")
+        mozi = "ごめんなさい、書き込みに失敗しました。"
+        postSlack(mozi)
+
 
 def clockOut(list):
     now = datetime.datetime.now()
@@ -86,17 +87,17 @@ def clockOut(list):
             for i in range(len(list)):
                 writer.writerow(list[i-1])
         print("[log] " + "書き込み正常終了")
-        mozi = nowDataList[0]+"さん、お疲れ様でした。正常に退勤処理を行いました。"
+        mozi = str(nowDataList[0])+"さん、お疲れ様でした。正常に退勤処理を行いました。"
         postSlack(mozi)
         print(nowDataList[2])
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playEvening()
 
-#    except:
- #       print("[error] " + "書き込み失敗")
-  #      PlayVoice.playError_DataError()
-   #     mozi = "ごめんなさい、書き込みに失敗しました。"
-    #    postSlack(mozi)
+    except:
+        print("[error] " + "書き込み失敗")
+        PlayVoice.playError_DataError()
+        mozi = "ごめんなさい、書き込みに失敗しました。"
+        postSlack(mozi)
 
 
 def operateCsv():
@@ -200,18 +201,20 @@ def connected(tag):
 
 
 if __name__ == "__main__":
+
     slack = Slack("xoxb-229374871141-393381246885-jPExwuiQSUS2yvNbJYa6RsFT")
     postSlack("勤怠管理を始めるね。")
     readNameLists()
-    print("")
-    print("")
-    print("**********************************")
-    print("      セキュリティカード待機中")
-    print("**********************************")
-    print("")
-    print("")
+    while True:
+        print("")
+        print("")
+        print("**********************************")
+        print("      セキュリティカード待機中")
+        print("**********************************")
+        print("")
+        print("")
 
-    clf = nfc.ContactlessFrontend('usb')
-    clf.connect(rdwr={'on-connect': connected})
-    clf.close()
-    print("[log] "+"待機")
+        clf = nfc.ContactlessFrontend('usb')
+        clf.connect(rdwr={'on-connect': connected})
+        clf.close()
+        print("[log] "+"待機")
