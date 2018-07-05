@@ -8,6 +8,8 @@ import json
 import codecs
 import PlayVoice
 import datetime
+from slacker import Slacker
+
 userData = {}
 nowDataList = []
 
@@ -17,6 +19,34 @@ CSV_PATH2 = ".csv"
 CSV_NAMELIST_PATH = "./csv/nameList.csv"
 VOICE_PATH1 = "./voice/"
 VOICE_PATH2 = ".wav"
+
+channelName = "working"
+
+
+class Slack(object):
+    __slacker = None
+
+    def __init__(self, token):
+        self.__slacker = Slacker(token)
+
+    def get_channnel_list(self):
+        """
+        Slackチーム内のチャンネルID、チャンネル名一覧を取得する。
+        """
+        # bodyで取得することで、[{チャンネル1},{チャンネル2},...,]の形式で取得できる。
+        raw_data = self.__slacker.channels.list().body
+        result = []
+        for data in raw_data["channels"]:
+            result.append(
+                dict(channel_id=data["id"], channel_name=data["name"]))
+        return result
+
+    def post_message_to_channel(self, channel, message):
+        """
+        Slackチームの任意のチャンネルにメッセージを投稿する。
+        """
+        channel_name = "#" + channel
+        self.__slacker.chat.post_message(channel_name, message)
 
 
 def clockIn():
@@ -30,12 +60,16 @@ def clockIn():
         with open(CSV_PATH1 + nowDataList[2] + CSV_PATH2, 'a') as f:
             writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
             writer.writerow(writeList)  # list（1次元配列)
-            print("[log] "+"成功")
+            print("[log] " + "成功")
+        mozi = nowDataList[0]+"さん、おはようございます。正常に出勤処理を行いました。"
+        postSlack(mozi)
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playMorning()
     except:
         PlayVoice.playError_DataError()
         print("[error] " + "書き込み失敗")
+        mozi = "ごめんなさい、書き込みに失敗しました。"
+        postSlack(mozi)
 
 
 def clockOut(list):
@@ -51,13 +85,17 @@ def clockOut(list):
             writer = csv.writer(f, lineterminator='\n')  # 改行コード（\n）を指定しておく
             for i in range(len(list)):
                 writer.writerow(list[i-1])
-        print("[log] "+"書き込み正常終了")
+        print("[log] " + "書き込み正常終了")
+        mozi = nowDataList[0]+"さん、お疲れ様でした。正常に退勤処理を行いました。"
+        postSlack(mozi)
         print(nowDataList[2])
         PlayVoice.playPathById(nowDataList[2])
         PlayVoice.playEvening()
     except:
         print("[error] " + "書き込み失敗")
         PlayVoice.playError_DataError()
+        mozi = "ごめんなさい、書き込みに失敗しました。"
+        postSlack(mozi)
 
 
 def operateCsv():
@@ -87,6 +125,7 @@ def operateCsv():
         print("**************")
         print("")
         clockOut(workingList)
+
     elif factor_num == 4 or factor_num == 0:
         print("")
         print("**************")
@@ -95,9 +134,12 @@ def operateCsv():
         print("**************")
         print("")
         clockIn()
+
     else:
         PlayVoice.playError_DataError()
         print("[error] " + "データがおかしい")
+        mozi = "データベースが何かおかしいみたいです。ごめんなさい、記録できませんでした。"
+        postSlack(mozi)
 
 
 def get_keys_from_value(d, val):  # (dictinary, search value)
@@ -119,6 +161,8 @@ def CheckNFC(_idm):
     else:
         print("[error] " + "CSV名前なし")
         PlayVoice.playError_NoName()
+        mozi = "カードがうまく読み取れませんでした。カードが重なってませんか？ご確認ください。"
+        postSlack(mozi)
 
     return checkFlg
 
@@ -141,6 +185,10 @@ def readNameLists():
     print("")
 
 
+def postSlack(mozi):
+    slack.post_message_to_channel(channelName, mozi)
+
+
 def connected(tag):
 
     print("[log] "+'ICカード検知 Type = {}'.format(tag.type))
@@ -151,8 +199,9 @@ def connected(tag):
 
 
 if __name__ == "__main__":
+    slack = Slack("xoxb-229374871141-393381246885-jPExwuiQSUS2yvNbJYa6RsFT")
+    postSlack("勤怠管理を始めるね。")
     readNameLists()
-
     print("")
     print("")
     print("**********************************")
