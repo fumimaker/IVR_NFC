@@ -11,7 +11,7 @@ import datetime
 from slacker import Slacker
 
 userData = {}
-nowDataList = []
+nowDataList = ["", "", ""]
 
 
 CSV_PATH1 = "./csv/"
@@ -153,9 +153,9 @@ def CheckNFC(_idm):
     checkFlg = False
     for value in userData.values():
         if _idm in value:
-            nowDataList.append(get_keys_from_value(userData, value))  # name
-            nowDataList.append(_idm)  # idm
-            nowDataList.append(value[_idm])  # path
+            nowDataList[0] = get_keys_from_value(userData, value)  # name
+            nowDataList[1] = _idm  # idm
+            nowDataList[2] = value[_idm]  # path
             checkFlg = True
             break
     if checkFlg:
