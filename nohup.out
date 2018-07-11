@@ -1,0 +1,1071 @@
+No handlers could be found for logger "nfc.llcp.sec"
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/mizuno.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+No handlers could be found for logger "nfc.llcp.sec"
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/error_noname.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/mizuno.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/mizuno.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/mizuno.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+python: can't open file 'Work/ivr_nfc/IVR_timeReport3.py': [Errno 2] No such file or directory
+再生中 WAVE './voice_time/evening/mainiti.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+
+
+[log] nameListを読み込んでいます。
+['OtsuruNaoyuki', 'C3D78B5A', 'otsuru']
+['SuzukiKenta', '01010312D718B809', 'suzuki']
+['SaitouHiroyasu', 'E3E88B5A', 'saitou']
+['HiraiYuichi', '93D78B5A', 'hirai']
+['TanakaSyuichi', '33C78B5A', 'tanaka']
+['MaedaJunki', 'B3E8F65B', 'maeda']
+['KobayashiRyuki', '53C78B5A', 'kobayashi']
+['TsutsumiSyuhei', '33D5F65B', 'tsutsumi']
+['AkagiGou', 'A3D78B5A', 'akagi']
+['AsakawaYuki', '13E9F65B', 'asakawa']
+['MizunoFumiaki', '011203125A198D0D', 'mizuno']
+['MizunoFumiaki', '0114D6AB78181719', 'mizuno']
+['MizunoFumiaki', 'C36F395C', 'mizuno']
+['TokunagaKiyoshi', '0397395C', 'asakawa']
+[log] nameList読み込み終了
+[log] データ数: 12
+
+
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type3Tag
+[log] idm = 0114D6AB78181719
+[error] CSV名前なし
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C36F395C
+[log] ['MizunoFumiaki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/mizuno.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['MizunoFumiaki']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '18:24:47', '18:50:36', '25.8166666667']
+[log] 書き込み正常終了
+mizuno
+mizuno
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C36F395C
+[log] ['MizunoFumiaki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/mizuno.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['MizunoFumiaki']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '18:50:55', '1530870655']
+[log] 成功
+mizuno
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C36F395C
+[log] ['MizunoFumiaki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/mizuno.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['MizunoFumiaki']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '18:50:55', '18:50:59', '0.0666666666667']
+[log] 書き込み正常終了
+mizuno
+mizuno
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '21:21:39', '1530879699']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '21:21:39', '21:21:44', '0.0833333333333']
+[log] 書き込み正常終了
+asakawa
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C3D78B5A
+[log] ['OtsuruNaoyuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/otsuru.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['OtsuruNaoyuki']
+**************
+
+[log] 書き込み予定データ['2018-07-06 Friday', '18:16:53', '21:21:48再生中 WAVE './voice/otsuru.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice_time/test/time_test.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/morning/bangaruzoi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/lunch/ohirunozikan.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/break/16zi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/evening/kiwotukete.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/test/time_test.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/morning/time_morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/lunch/ohirunozikan.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/break/kyuukei.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/evening/mainiti.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/test/time_test.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/morning/time_morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tsutsumi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/otsuru.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice_time/lunch/tabeniikimasennka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/break/time_break.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/evening/kiwotukete.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/error_noname.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/saitou.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+', '184.916666667']
+[log] 書き込み正常終了
+otsuru
+otsuru
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33D5F65B
+[log] ['TsutsumiSyuhei']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tsutsumi.csv
+[error] 何もなし
+[log] データ数: 0
+
+**************
+   出勤処理
+['TsutsumiSyuhei']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:06', '1531097346']
+[log] 成功
+tsutsumi
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-06-21 Thursday', '22:51:23', '09:49:11', '25137.8']
+[log] 書き込み正常終了
+maeda
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:16', '1531097356']
+[log] 成功
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C3D78B5A
+[log] ['OtsuruNaoyuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/otsuru.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['OtsuruNaoyuki']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:27', '1531097367']
+[log] 成功
+otsuru
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:52:29', '1531097549']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:16', '19:10:35', '561.316666667']
+[log] 書き込み正常終了
+maeda
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type3Tag
+[log] idm = 011203125A194713
+[error] CSV名前なし
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = E3E88B5A
+[log] ['SaitouHiroyasu']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/saitou.csv
+[error] 何もなし
+[log] データ数: 0
+
+**************
+   出勤処理
+['SaitouHiroyasu']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '19:11:36', '1531131096']
+[log] 成功
+saitou
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+****再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tsutsumi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tanaka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tanaka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/saitou.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/otsuru.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice_time/test/time_test.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/morning/ganbatte.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+******************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33D5F65B
+[log] ['TsutsumiSyuhei']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tsutsumi.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TsutsumiSyuhei']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:06', '19:11:47', '562.683333333']
+[log] 書き込み正常終了
+tsutsumi
+tsutsumi
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33C78B5A
+[log] ['TanakaSyuichi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tanaka.csv
+[error] 何もなし
+[log] データ数: 0
+
+**************
+   出勤処理
+['TanakaSyuichi']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '19:12:26', '1531131146']
+[log] 成功
+tanaka
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33C78B5A
+[log] ['TanakaSyuichi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tanaka.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TanakaSyuichi']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '19:12:26', '19:12:34', '0.133333333333']
+[log] 書き込み正常終了
+tanaka
+tanaka
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = E3E88B5A
+[log] ['SaitouHiroyasu']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/saitou.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['SaitouHiroyasu']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '19:11:36', '19:21:03', '9.45']
+[log] 書き込み正常終了
+saitou
+saitou
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 13E9F65B
+[log] ['AsakawaYuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['AsakawaYuki']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:52:29', '20:48:39', '656.166666667']
+[log] 書き込み正常終了
+asakawa
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C3D78B5A
+[log] ['OtsuruNaoyuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/otsuru.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['OtsuruNaoyuki']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '09:49:27', '21:23:25', '693.966666667']
+[log] 書き込み正常終了
+otsuru
+otsuru
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '22:42:28', '1531143748']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 4
+
+**************
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tsutsumi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice_time/lunch/time_lunch.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/break/stand.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/evening/time_evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tsutsumi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tanaka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tanaka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+   出勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '09:28:00', '1531182480']
+[log] 成功
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33D5F65B
+[log] ['TsutsumiSyuhei']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tsutsumi.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TsutsumiSyuhei']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '09:42:28', '1531183348']
+[log] 成功
+tsutsumi
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-09 Monday', '22:42:28', '09:50:11', '667.716666667']
+[log] 書き込み正常終了
+asakawa
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33D5F65B
+[log] ['TsutsumiSyuhei']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tsutsumi.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TsutsumiSyuhei']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '09:42:28', '19:03:31', '561.05']
+[log] 書き込み正常終了
+tsutsumi
+tsutsumi
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '09:28:00', '19:08:12', '580.2']
+[log] 書き込み正常終了
+maeda
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33C78B5A
+[log] ['TanakaSyuichi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tanaka.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TanakaSyuichi']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:40:10', '1531219210']
+[log] 成功
+tanaka
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33C78B5A
+[log] ['TanakaSyuichi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tanaka.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TanakaSyuichi']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:40:10', '19:40:14', '0.0666666666667']
+[log] 書き込み正常終了
+tanaka
+tanaka
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 13E9F65B
+[log] ['AsakawaYuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['AsakawaYuki']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:46:28', '1531219588']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm 再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/evening.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice_time/test/time_test.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice_time/morning/time_morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/maeda.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/asakawa.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/otsuru.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/saitou.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/check.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/tsutsumi.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+再生中 WAVE './voice/morning.wav' : Signed 16 bit Little Endian, レート 44100 Hz, ステレオ
+= 13E9F65B
+[log] ['AsakawaYuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['AsakawaYuki']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:46:28', '19:46:31', '0.05']
+[log] 書き込み正常終了
+asakawa
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:46:37', '1531219597']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 3
+
+**************
+   退勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-10 Tuesday', '19:46:37', '19:46:47', '0.166666666667']
+[log] 書き込み正常終了
+asakawa
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = B3E8F65B
+[log] ['MaedaJunki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/maeda.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['MaedaJunki']
+**************
+
+[log] 書き込み予定データ['2018-07-11 Wednesday', '09:39:15', '1531269555']
+[log] 成功
+maeda
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 0397395C
+[log] ['TokunagaKiyoshi']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/asakawa.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TokunagaKiyoshi']
+**************
+
+[log] 書き込み予定データ['2018-07-11 Wednesday', '09:49:34', '1531270174']
+[log] 成功
+asakawa
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = C3D78B5A
+[log] ['OtsuruNaoyuki']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/otsuru.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['OtsuruNaoyuki']
+**************
+
+[log] 書き込み予定データ['2018-07-11 Wednesday', '09:49:45', '1531270185']
+[log] 成功
+otsuru
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = E3E88B5A
+[log] ['SaitouHiroyasu']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/saitou.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['SaitouHiroyasu']
+**************
+
+[log] 書き込み予定データ['2018-07-11 Wednesday', '09:55:24', '1531270524']
+[log] 成功
+saitou
+[log] 待機
+
+
+**********************************
+      セキュリティカード待機中
+**********************************
+
+
+[log] ICカード検知 Type = Type2Tag
+[log] idm = 33D5F65B
+[log] ['TsutsumiSyuhei']名前発見
+
+[log] タイムカードを読み込んでいます。
+[log] 書き込みパス: ./csv/tsutsumi.csv
+[log] データ数: 4
+
+**************
+   出勤処理
+['TsutsumiSyuhei']
+**************
+
+[log] 書き込み予定データ['2018-07-11 Wednesday', '09:55:35', '1531270535']
+[log] 成功
+tsutsumi
+[log] 待機
+
+
+*********************************再生中 WAVE './voice_time/lunch/tabeniikimasennka.wav' : Signed 16 bit Little Endian, レート 44100 Hz, モノラル

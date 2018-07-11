@@ -11,7 +11,7 @@ PATH1 = "./voice_time/"
 morningTime = datetime.time(9, 0)
 lunchTime = datetime.time(13, 10)
 breakTime = datetime.time(16, 0)
-eveningTime = datetime.time(19,0)
+eveningTime = datetime.time(19, 0)
 testTime = datetime.time(0, 0)
 
 morningPath = "morning/"
@@ -25,23 +25,6 @@ time_list = {morningTime: morningPath, lunchTime: lunchPath,
 
 
 def playSound(path):
-    '''
-    CHUNK = 1024
-    filename = path
-    wf = wave.open(filename, 'rb')
-    p = pyaudio.PyAudio()
-    stream = p.open(format=p.get_format_from_width(wf.getsampwidth()),
-                    channels=wf.getnchannels(),
-                    rate=wf.getframerate(),
-                    output=True)
-    data = wf.readframes(CHUNK)
-    while data != '':
-        stream.write(data)
-        data = wf.readframes(CHUNK)
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
-    '''
     cmd = "aplay " + path
     os.system(cmd)
 

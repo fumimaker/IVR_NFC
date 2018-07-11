@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import nfcpy
+import nfc
 import binascii
 import datetime
 import sys
