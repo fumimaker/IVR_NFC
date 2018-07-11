@@ -9,7 +9,7 @@ from slacker import Slacker
 
 PATH1 = "./voice_time/"
 
-morningTime = datetime.time(9, 0)
+morningTime = datetime.time(10, 0)
 lunchTime = datetime.time(13, 10)
 breakTime = datetime.time(16, 0)
 eveningTime = datetime.time(19, 0)
