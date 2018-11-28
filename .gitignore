@@ -1,10 +1,11 @@
 *.pyc
 *.DS_Store
 /nohup.out
-csv/
-voive/
-tools/
-voive_time/
+/csv/
+/voice/
+/tools/
+/voice_time/
+/.vscode/
 
 /IVR_NFC.py
 /IVR_NFC2.py
@@ -21,5 +22,3 @@ voive_time/
 
 /nfcpy.py
 /slackbot_settings.py
-
-.vscode/
