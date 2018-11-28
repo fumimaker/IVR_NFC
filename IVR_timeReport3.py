@@ -88,7 +88,7 @@ def postSlack(mozi):
 
 
 if __name__ == "__main__":
-    slack = Slack("xoxb-229374871141-393381246885-jPExwuiQSUS2yvNbJYa6RsFT")
+    slack = Slack("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     postSlack("[log]時報システムを起動するよ！")
     print("****************************")
     print("   IVR_TimeReport-System")
