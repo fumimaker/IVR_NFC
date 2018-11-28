@@ -1,10 +1,11 @@
 *.pyc
-csv/
 *.DS_Store
 /nohup.out
 /csv/
 /voive/
+/tools/
 /voive_time/
+
 /IVR_NFC.py
 /IVR_NFC2.py
 /bk_IVR_NFC2.py
@@ -14,8 +15,10 @@ csv/
 /IVR_NFC6.py
 /IVR_NFC7.py
 /IVR_NFC8.py
+
 /IVR_timeReport.py
 /IVR_timeReport2.py
+
 /nfcpy.py
 /slackbot_settings.py
-/tools/
+
