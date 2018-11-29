@@ -202,7 +202,7 @@ def connected(tag):
 
 if __name__ == "__main__":
 
-    slack = Slack("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+    slack = Slack("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     postSlack("勤怠管理を始めるね。")
     readNameLists()
     while True:
