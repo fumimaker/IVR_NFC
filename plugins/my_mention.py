@@ -3,7 +3,7 @@
 from slackbot.bot import respond_to     # @botname: で反応するデコーダ
 from slackbot.bot import listen_to      # チャネル内発言で反応するデコーダ
 from slackbot.bot import default_reply  # 該当する応答がない場合に反応するデコーダ
-
+import PlayVoice
 # @respond_to('string')     bot宛のメッセージ
 #                           stringは正規表現が可能 「r'string'」
 # @listen_to('string')      チャンネル内のbot宛以外の投稿
@@ -59,10 +59,12 @@ def mention_func(message):
 @listen_to(u'IVRアキハバラスタジオ受付に、「配達業者さま専用」ボタンから')
 def listen_func(message):
     message.send('<!here> 何か荷物がきたみたいですよ！どなたか出ていただけませんか？')
+    PlayVoice.playSound("./voice/nimotu.wav")
     print("荷物が来ました。")
 
 
 @listen_to(u'IVRアキハバラスタジオ受付に、「総合受付」ボタンから')
 def listen_func(message):
     message.send('<!here> 外に誰か来たみたいですよ。どなたか出ていただけませんか？')
+    PlayVoice.playSound("./voice/guest.wav")
     print("お客さんが来ました。")
